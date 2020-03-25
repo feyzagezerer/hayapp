@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "645763436223",
+    "firebase_url": "https://hayapp-76ccd.firebaseio.com",
+    "project_id": "hayapp-76ccd",
+    "storage_bucket": "hayapp-76ccd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645763436223:android:285954eac51c15bfe7800a",
+        "android_client_info": {
+          "package_name": "com.feyza.hayapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645763436223-sr1461n2aiqm9d6g3lrg37cmlrjp1raj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWvJsV3wrbfIBeiemkLAKdW-ZOOzusKWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645763436223-sr1461n2aiqm9d6g3lrg37cmlrjp1raj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
