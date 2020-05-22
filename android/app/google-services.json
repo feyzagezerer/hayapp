@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "645763436223-3lkk83i13uumo3ttam0dj9ckqrr5he6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.feyza.hayapp",
+            "certificate_hash": "4e9752a25c6d869eaaf95d74d51a18974327b4fd"
+          }
+        },
+        {
           "client_id": "645763436223-sr1461n2aiqm9d6g3lrg37cmlrjp1raj.apps.googleusercontent.com",
           "client_type": 3
         }
