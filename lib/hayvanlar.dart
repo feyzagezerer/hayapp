@@ -4,92 +4,216 @@ import 'package:hayapp/kedi.dart';
 import 'package:hayapp/muhabbet_kusu.dart';
 import 'package:hayapp/sultan_papagani.dart';
 
+class Hayvanlar extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => new _HayvanlarState();
+}
 
-class Hayvanlar extends StatelessWidget {
+class _HayvanlarState extends State<Hayvanlar> {
+
+
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
 
-  return Column(
-  mainAxisSize: MainAxisSize.max,
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: <Widget>[
-  Row(
-  mainAxisSize: MainAxisSize.max,
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  children: <Widget>[
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade100,
-  child: Text("D",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade300,
-  child: Text("A",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade500,
-  child: Text("R",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade700,
-  child: Text("T",style: TextStyle(fontSize: 24),),
-  ),
-  ],
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade200,
-  child: Text("E",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade300,
-  child: Text("R",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade400,
-  child: Text("S",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade500,
-  child: Text("L",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade600,
-  child: Text("E",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.all(20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade700,
-  child: Text("R",style: TextStyle(fontSize: 24),),
-  ),
-  Container(
-  padding: EdgeInsets.fromLTRB(23, 20, 23, 20),
-  margin: EdgeInsets.all(2),
-  color: Colors.red.shade800,
-  child: Text("I",style: TextStyle(fontSize: 24),),
-  ),
-  ],
-  );
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.only(left:13.0,top: 35.0,right:10.0,bottom: 10.0),
+         child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+
+          Row(
+          mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              ButtonTheme(
+                minWidth: 180.0,
+                height: 180.0,
+                    buttonColor: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 5.0, top: 35.0, right: 5.0, bottom: 5.0),
+                    child: RaisedButton(
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(130.0),
+                            side: BorderSide(color: Colors.white)),
+
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+
+                            children: <Widget>[
+                              Image.asset(
+                                "images/kedi.png",
+                                width: 100,
+                                height: 100,
+                              ),
+                              Text(
+                                'Kedi',
+                                textAlign: TextAlign.end,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                    color: Colors.green.shade900),
+                              ),
+                            ],
+                          ),
+
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MyApp()),
+                          );
+                        }),),
+
+                  ),
+              ButtonTheme(
+                minWidth: 180.0,
+                height: 180.0,
+                buttonColor: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 5.0, top: 35.0, right: 5.0, bottom: 5.0),
+                child: RaisedButton(
+                    shape: new RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(130.0),
+                        side: BorderSide(color: Colors.white)),
+
+                    focusColor: Colors.white,
+                    splashColor: Colors.white,
+
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+
+                      children: <Widget>[
+                        Image.asset(
+                          "images/muhabbetkusu.png",
+                          width: 100,
+                          height: 100,
+                        ),
+                        Text(
+                          'Muhabbet \nKuşu',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            color: Colors.green.shade900,
+                          ),
+                        ),
+                      ],
+                    ),
+
+
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => MuhabbetKusu()),
+                      );
+                    }
+                ),
+                ),
+              ),
+
+
+                  ],
+      ),
+
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  ButtonTheme(
+                    minWidth: 180.0,
+                    height: 180.0,
+                    buttonColor: Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          left: 5.0, top: 5.0, right: 5.0, bottom: 10.0),
+                    child: RaisedButton(
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(130.0),
+                            side: BorderSide(color: Colors.white)),
+
+                        focusColor: Colors.white,
+                        splashColor: Colors.white,
+
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+
+                          children: <Widget>[
+                            Image.asset(
+                              "images/kopek.png",
+                              width: 100,
+                              height: 100,
+                            ),
+                            Text(
+                              'Köpek',
+                              textAlign: TextAlign.end,
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: Colors.green.shade900),
+                            ),
+                          ],
+                        ),
+
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Kopek()),
+                          );
+                        }),
+                    ),
+                  ),
+                  ButtonTheme(
+                    minWidth: 180.0,
+                    height: 180.0,
+                    buttonColor: Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          left: 5.0, top: 5.0, right: 5.0, bottom: 10.0),
+                    child: RaisedButton(
+                      shape: new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(130.0),
+                          side: BorderSide(color: Colors.white)),
+
+                      focusColor: Colors.white,
+                      splashColor: Colors.white,
+
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+
+                          children: <Widget>[
+                            Image.asset(
+                              "images/sultanpapagani.png",
+                              width: 100,
+                              height: 100,
+                            ),
+                            Text('Sultan\nPapağanı',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: Colors.green.shade900,
+                                )),
+                          ],
+                        ),
+
+                       onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => SultanPapagani()),
+                            );
+                          }
+                    ),),
+                  ),
+            ],
+          ),
+            ],
+          ),
+
+        ),
+      ),
+
+    );
   }
-
-
-
-  }
+}

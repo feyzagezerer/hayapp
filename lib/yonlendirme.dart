@@ -3,6 +3,7 @@ import 'package:hayapp/ui/hayapp_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hayapp/kullanici.dart';
 import 'package:hayapp/kullanici_islemleri.dart';
+import 'package:hayapp/bottom_navigation.dart';
 
 enum AuthStatus {
   NOT_DETERMINED,
@@ -78,7 +79,7 @@ class _RootPageState extends State<RootPage> {
         break;
       case AuthStatus.LOGGED_IN:
         if (_userId.length > 0 && _userId != null) {
-          return new HomePage (
+          return new HayappPage (
             userId: _userId,
             auth: widget.auth,
             logoutCallback: logoutCallback,

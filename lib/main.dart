@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hayapp/firestore.dart';
 import 'package:hayapp/ui/hayapp_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:hayapp/sultan_papagani.dart';
-import 'package:hayapp/muhabbet_kusu.dart';
 import 'package:hayapp/kullanici.dart';
 import 'package:hayapp/kullanici_islemleri.dart';
 import 'package:hayapp/yonlendirme.dart';
@@ -30,12 +29,10 @@ class Hayapp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
+        //home: FireStore(),
       home: RootPage(auth: new Auth()),
     );
-
   }
-
-
 }
 /*
 class HayappPage extends StatefulWidget {
